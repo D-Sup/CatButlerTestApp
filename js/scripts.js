@@ -3,11 +3,11 @@ function start() {
   $('.question').show();
   next();
 }
-var num = 1;
+let num = 1;
 let total = '';
 let maxKey;
 let final;
-var q = {
+const q = {
   1: {
     title: '나의 다리를 문지른다..!',
     A: '고양이가 관심을 끌려고 한다',
@@ -89,7 +89,7 @@ var q = {
     E: '고양이는 자신의 지배력을 주장하려고 한다',
   },
 };
-let result = {
+const result = {
   A: {
     rank: '초보 고양이 집사',
     explain: '고양이의 행동에 대한 기본적인 이해가 어느 정도 있지만 개선의 여지가 있습니다.',
@@ -119,7 +119,7 @@ let result = {
   F: { rank: '고양이 박사', explain: '당신은 고양이를 키울자격이 있습니다', img: 'F.png' },
 };
 
-var btn_list = [
+const btn_list = [
   "<button id='A' type='button' class='btn btn-outline-light mt-3 option-btn'>...</button>",
   "<button id='B' type='button' class='btn btn-outline-light mt-3 option-btn'>...</button>",
   "<button id='C' type='button' class='btn btn-outline-light mt-3 option-btn'>...</button>",
@@ -128,7 +128,7 @@ var btn_list = [
 ];
 
 const opt = document.querySelector('.option');
-let option_btn = document.querySelectorAll('.option-btn');
+const option_btn = document.querySelectorAll('.option-btn');
 
 opt.addEventListener('click', e => {
   if (!e.target.className.includes('d-grid')) {
